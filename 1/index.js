@@ -25,45 +25,45 @@
 // } else{
 //     alert("i don`t know you!");
 // }
-var a,
-    b,
-    c,
-    mode,
-    compareAB,
-    compareABC;
-
-a = +prompt('Enter first number.');
-while (isNaN(a)){
-    a = +prompt('Wrong value! Enter first number.')
-}
-b = +prompt('Enter second number.');
-while (isNaN(b)){
-    b = +prompt('Wrong value! Enter second number.')
-}
-c = +prompt('Enter third number.');
-while (isNaN(c)){
-    c = +prompt('Wrong value! Enter third number.')
-}
-
-
-mode = prompt("Enter: 'min' or 'max'?");
-while (mode !== "max" && mode !== "min"){
-    mode = prompt("Wrong value! Please, enter: 'min' or 'max'? ");
-}
-if (mode === "max"){
-    compareAB = a > b ? a : b;
-    compareABC = compareAB > c ? compareAB : c;
-    alert(compareABC);
-
-} else {
-    compareAB = a < b? a : b;
-    compareABC = compareAB < c ? compareAB : c;
-    alert(compareABC);
-}
+// var a,
+//     b,
+//     c,
+//     mode,
+//     compareAB,
+//     compareABC;
+//
+// a = +prompt('Enter first number.');
+// while (isNaN(a)){
+//     a = +prompt('Wrong value! Enter first number.')
+// }
+// b = +prompt('Enter second number.');
+// while (isNaN(b)){
+//     b = +prompt('Wrong value! Enter second number.')
+// }
+// c = +prompt('Enter third number.');
+// while (isNaN(c)){
+//     c = +prompt('Wrong value! Enter third number.')
+// }
+//
+//
+// mode = prompt("Enter: 'min' or 'max'?");
+// while (mode !== "max" && mode !== "min"){
+//     mode = prompt("Wrong value! Please, enter: 'min' or 'max'? ");
+// }
+// if (mode === "max"){
+//     compareAB = a > b ? a : b;
+//     compareABC = compareAB > c ? compareAB : c;
+//     alert(compareABC);
+//
+// } else {
+//     compareAB = a < b? a : b;
+//     compareABC = compareAB < c ? compareAB : c;
+//     alert(compareABC);
+// }
 
 var num = +prompt("Enter number 1-7");
 
-if (isNumber(num) && num >= 1 && num <= 7){
+if (num >= 1 && num <= 7){
     alert('Number');
 }
 
